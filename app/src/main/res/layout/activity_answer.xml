@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bj"
+    tools:context=".ui.answer.AnswerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/iv_fanhui"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/fanhui_black"
+            android:layout_centerVertical="true"
+            app:tint="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="答案之书"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请在心中默念你的问题"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(长按下方3秒)"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                />
+        </LinearLayout>
+        <com.qw.adse.utils.ScaleLayout
+            android:id="@+id/sl_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+
+            attr:widthToHeight="1">
+
+            <ImageView
+                android:id="@+id/iv_answer"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/bj_mao" />
+        </com.qw.adse.utils.ScaleLayout>
+
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.TwoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多玩法"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/iv_set_up"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/gouzhua"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_draw"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@mipmap/lay_cj"
+        android:layout_marginTop="15dp"
+        >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_ddck"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@mipmap/lay_ddck"
+        android:layout_marginTop="15dp"
+        >
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_coin"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@mipmap/lay_yb"
+        android:layout_marginTop="15dp"
+        >
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_kapai"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@mipmap/lay_kp"
+        android:layout_marginTop="15dp"
+        >
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_answer"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@mipmap/lay_dazs"
+        android:layout_marginTop="15dp"
+        >
+
+
+    </RelativeLayout>
+
+</LinearLayout>
